@@ -1,0 +1,15 @@
+$margin-body: 10px;
+$margin-div: 15px;
+  
+@mixin margin($margin) {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+body {
+  @include margin-bottom($margin-body)
+}
+
+div {
+  @include margin-bottom($margin-div)
+ }
